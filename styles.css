@@ -1,0 +1,464 @@
+/* Общие стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #3498db;
+  margin: 10px auto 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Шапка */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Главная секция */
+.hero {
+  background: linear-gradient(270deg, #198edb, #298dff, #3392ff);
+  background-size: 600% 600%;
+  animation: gradientBackground 10s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Направления */
+.destination-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destination {
+  flex: 1 1 calc(33.333% - 40px);
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.destination:hover {
+  transform: translateY(-10px);
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Туры */
+.tour-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tour {
+  flex: 1 1 calc(50% - 40px);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tour:hover {
+  transform: translateY(-10px);
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Контакты */
+form input, form textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Футер */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.reviews {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.review-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review {
+  flex: 1 1 calc(33.333% - 40px);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.review:hover {
+  transform: translateY(-10px);
+}
+
+.review p {
+  font-style: italic;
+  color: #555;
+}
+
+.review .author {
+  text-align: right;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.offers {
+  background-color: #3498db;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.offer-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.offer {
+  flex: 1 1 calc(50% - 40px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.offer:hover {
+  transform: translateY(-10px);
+}
+
+.offer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.offer p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 40px);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.countdown {
+  padding: 50px 0;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.timer-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.timer-item span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timer-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.flip-cards {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.flip-card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  flex: 1 1 calc(33.333% - 40px);
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.flip-card-back {
+  background-color: #5a5a5a;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* Улучшенные тени и градиенты */
+.hero {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.destination, .tour, .review, .gallery-item {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination:hover, .tour:hover, .review:hover, .gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для заголовка */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Скрываем переполнение */
+}
+
+/* Псевдоэлемент для закрашивания текста */
+header h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Начинаем за пределами текста */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #9b59b6); /* Градиентный фон */
+  transition: left 0.5s ease; /* Плавное появление */
+  z-index: -1;
+}
+
+/* Эффект закрашивания при наведении */
+header h1:hover::before {
+  left: 0; /* Перемещаем псевдоэлемент на текст */
+}
+
+/* Текст поверх псевдоэлемента */
+header h1 span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* Изменение цвета текста при наведении */
+header h1:hover span {
+  color: transparent; /* Делаем текст прозрачным */
+  background: linear-gradient(90deg, #3498db, #9b59b6); /* Градиент для текста */
+  -webkit-background-clip: text;
+  background-clip: text;
+}

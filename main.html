@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container">
+      <h1>Travel Explorer</h1>
+      <nav>
+        <ul>
+          <li><a href="#about" class="active">О нас</a></li>
+          <li><a href="#destinations">Направления</a></li>
+          <li><a href="#tours">Туры</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главная секция -->
+  <section class="hero">
+    <div class="container">
+      <h2>Открой для себя мир с Travel Explorer</h2>
+      <p>Планируйте свои путешествия с нами и наслаждайтесь каждым моментом.</p>
+      <a href="#tours" class="btn">Найти тур</a>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>О нас</h2>
+      <p>Мы — команда профессионалов, которая помогает вам открывать новые горизонты. Наши туры — это незабываемые впечатления и комфорт.</p>
+    </div>
+  </section>
+
+  <!-- Направления -->
+  <section id="destinations" class="destinations">
+    <div class="container">
+      <h2>Популярные направления</h2>
+      <div class="destination-grid">
+        <div class="destination">
+          <div class="image-container">
+            <img src="italy.png" alt="Италия">
+          </div>
+          <h3>Италия</h3>
+          <p>Романтические каникулы в Венеции и Риме.</p>
+        </div>
+        <div class="destination">
+          <div class="image-container">
+            <img src="japan.png" alt="Япония">
+          </div>
+          <h3>Япония</h3>
+          <p>Откройте для себя культуру и традиции Японии.</p>
+        </div>
+        <div class="destination">
+          <div class="image-container">
+            <img src="image.png" alt="Мальдивы">
+          </div>
+          <h3>Мальдивы</h3>
+          <p>Райские пляжи и кристально чистая вода.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Туры -->
+  <section id="tours" class="tours">
+    <div class="container">
+      <h2>Наши туры</h2>
+      <div class="tour-list">
+        <div class="tour">
+          <h3>Тур в Италию</h3>
+          <p>7 дней, 6 ночей. Включено: проживание, экскурсии, завтраки.</p>
+          <p class="price">$1200</p>
+          <a href="#" class="btn">Забронировать</a>
+        </div>
+        <div class="tour">
+          <h3>Тур в Японию</h3>
+          <p>10 дней, 9 ночей. Включено: проживание, экскурсии, транспорт.</p>
+          <p class="price">$2000</p>
+          <a href="#" class="btn">Забронировать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>Свяжитесь с нами для бронирования туров или получения дополнительной информации.</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="email" id="email" placeholder="Ваш email" required>
+        <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>Отзывы наших клиентов</h2>
+      <div class="review-grid">
+        <div class="review">
+          <p>"Отличный сервис! Всё было организовано на высшем уровне. Спасибо!"</p>
+          <p class="author">— Анна, Москва</p>
+        </div>
+        <div class="review">
+          <p>"Путешествие в Японию стало незабываемым благодаря Travel Explorer."</p>
+          <p class="author">— Иван, Санкт-Петербург</p>
+        </div>
+        <div class="review">
+          <p>"Мальдивы — это мечта, которая стала реальностью. Спасибо за организацию!"</p>
+          <p class="author">— Мария, Екатеринбург</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Travel Explorer. Все права защищены.</p>
+      <div class="social-links">
+        <a href="#" target="_blank">📘</a>
+        <a href="#" target="_blank">📸</a>
+        <a href="#" target="_blank">🐦</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
